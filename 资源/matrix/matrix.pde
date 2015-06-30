@@ -10,7 +10,7 @@ void setup()
   
   font=loadFont("Arial-BoldMT-15.vlw");
   //font=loadFont("2.0--48.vlw");
-  size(850,600);
+  size(900,300);
   arr=new float[width*height];
    speed=new int[width/10];
   for(int x=0;x<width/10;x++)
@@ -19,11 +19,11 @@ void setup()
   }
   textFont(font);
   pushStyle();
-  textSize(130);
+  textSize(100);
   background(0);
   fill(255);
   textAlign(CENTER);
-  text("Welcome!",width/2,2*height/4);
+  text("Welcome to CODE!",width/2,2*height/4);
   popStyle();
   loadPixels();
   for(int i=0;i<width*height;i++)
@@ -58,6 +58,8 @@ void draw()
   i+=2;
   filter(ERODE);
 }
+
+
 
 
 
